@@ -4,7 +4,6 @@
 | nickname            | string     | null: false                   |
 | email               | string     | null: false,unique: true      |
 | encrypted_password  | string     | null: false                   |
-
 ### Association
 - has_many :saunas
 
@@ -25,8 +24,6 @@
 | block                 | string      | null: false                     |
 | building              | string      |                                 |
 | phone_number          | string      | null: false                     |
-
-
 ### Association
 - belongs_to :user
 - belongs_to :category
