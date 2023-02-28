@@ -10,7 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_02_28_110727) do
+ActiveRecord::Schema.define(version: 2023_02_28_133718) do
+
+  create_table "saunas", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "name", null: false
+    t.text "text", null: false
+    t.integer "price", null: false
+    t.integer "temperature", null: false
+    t.integer "humidity", null: false
+    t.integer "cool_bath_temperature", null: false
+    t.integer "category_id", null: false
+    t.string "postcode", null: false
+    t.integer "prefecture_id", null: false
+    t.string "city", null: false
+    t.string "block", null: false
+    t.string "building", null: false
+    t.string "phone_number", null: false
+    t.index ["user_id"], name: "index_saunas_on_user_id"
+  end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "nickname", null: false
@@ -25,4 +45,5 @@ ActiveRecord::Schema.define(version: 2023_02_28_110727) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "saunas", "users"
 end
