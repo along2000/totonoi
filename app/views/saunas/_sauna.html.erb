@@ -1,0 +1,11 @@
+<div class='sauna-img-content'>
+  <%= image_tag sauna.image, class: "sauna-img" if sauna.image.attached? %>
+</div>
+<div class='sauna-info'>
+ <h3 class='sanua-name'>
+  <%= sauna.name %>
+ </h3>
+ <div class='sauna-price'>
+  <span><%= sauna.price %>円<br></span>
+   </div>
+</div>

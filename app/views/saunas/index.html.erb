@@ -6,7 +6,10 @@
       </div> 
      <% end %>
     <div class="card__wrapper">
-      <%= render  partial:'sauna', collection: @sauna %> 
+      <%#= render  partial:'sauna', collection: @sauna %> 
+        <% @sauna.each do |sanua| %>
+         <%= render partial: "sauna", locals: { sauna: sanua } %>
+        <% end %>
     </div>
   </div>
 </main>
