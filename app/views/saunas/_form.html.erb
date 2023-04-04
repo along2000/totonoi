@@ -36,7 +36,31 @@
     <%= f.text_field :cool_bath_temperature, class: :form__text, id:"sauna-cool_bath_temperature" %>
   </div>
 
+    <%= f.label :category_id, "カテゴリ" %><br />
    <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"sauna-category"}) %>
+
+     <div class="field">
+    <%= f.label :postcode, "郵便番号" %><br />
+    <%= f.text_field :postcode, class: :form__text, id:"sauna-postcode" %>
+  </div>
+
+    <%= f.label :prefecture_id, "都道府県" %><br />
+   <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"select-box", id:"sauna-prefecture"}) %>
+
+     <div class="field">
+    <%= f.label :city, "市区町村" %><br />
+    <%= f.text_field :city, class: :form__text, id:"sauna-city" %>
+  </div>
+
+       <div class="field">
+    <%= f.label :block, "番地(市区町村以降)" %><br />
+    <%= f.text_field :block, class: :form__text, id:"sauna-block" %>
+  </div>
+
+       <div class="field">
+    <%= f.label :building, "建物名" %><br />
+    <%= f.text_field :building, class: :form__text, id:"sauna-building" %>
+  </div>
 
   <div class="actions">
     <%= f.submit "保存する", class: :form__btn  %>
