@@ -1,0 +1,25 @@
+<%= form_with(model: @sauna, local: true) do |f| %> 
+  <div class="field">
+    <%= f.label :name, "施設名" %><br />
+    <%= f.text_field :name, id:"sauna-name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :text, "施設紹介" %><br />
+    <%= f.text_area :text, class: :form__text, id:"sauna-text" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price, "料金目安" %><br />
+    <%= f.text_area :price, class: :form__text, id:"sauna-price" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image, "施設の画像" %><br />
+    <%= f.file_field :image, id:"sauna-image" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+<% end %>
