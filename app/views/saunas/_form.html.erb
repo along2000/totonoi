@@ -1,4 +1,11 @@
 <%= form_with(model: @sauna, local: true) do |f| %> 
+    <%#= render 'shared/error_messages', model: f.object %>
+
+  <div class="field">
+    <%= f.label :image, "施設の画像" %><br />
+    <%= f.file_field :image, id:"sauna-image" %>
+  </div>
+
   <div class="field">
     <%= f.label :name, "施設名" %><br />
     <%= f.text_field :name, id:"sauna-name" %>
@@ -11,13 +18,25 @@
 
   <div class="field">
     <%= f.label :price, "料金目安" %><br />
-    <%= f.text_area :price, class: :form__text, id:"sauna-price" %>
+    <%= f.text_field :price, class: :form__text, id:"sauna-price" %>
   </div>
 
   <div class="field">
-    <%= f.label :image, "施設の画像" %><br />
-    <%= f.file_field :image, id:"sauna-image" %>
+    <%= f.label :temperature, "温度" %><br />
+    <%= f.text_field :temperature, class: :form__text, id:"sauna-temperature" %>
   </div>
+
+    <div class="field">
+    <%= f.label :humidity, "湿度" %><br />
+    <%= f.text_field :humidity, class: :form__text, id:"sauna-humidity" %>
+  </div>
+
+      <div class="field">
+    <%= f.label :cool_bath_temperature, "水温" %><br />
+    <%= f.text_field :cool_bath_temperature, class: :form__text, id:"sauna-cool_bath_temperature" %>
+  </div>
+
+   <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"sauna-category"}) %>
 
   <div class="actions">
     <%= f.submit "保存する", class: :form__btn  %>
