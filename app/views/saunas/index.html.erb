@@ -1,15 +1,14 @@
 <main class="main">
   <div class="inner">
- <% if user_signed_in? %>
+
+    <% if user_signed_in? %>
       <div class="greeting">
       <span>こんにちは、</span><%= link_to current_user.nickname + "さん", user_path(current_user),class: :greeting__link %>
       </div> 
-     <% end %>
+    <% end %>
+
     <div class="card__wrapper">
-      <%#= render  partial:'sauna', collection: @sauna %> 
-        <% @sauna.each do |sanua| %>
-         <%= render partial: "sauna", locals: { sauna: sanua } %>
-        <% end %>
+      <%= render  partial:'sauna', collection: @saunas %> 
     </div>
   </div>
 </main>

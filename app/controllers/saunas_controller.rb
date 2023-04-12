@@ -1,7 +1,7 @@
 class SaunasController < ApplicationController
 
   def index
-    @sauna = Sauna.all
+    @saunas = Sauna.all
   end
 
   def new
@@ -15,6 +15,10 @@ class SaunasController < ApplicationController
     else
       render :new
     end
+  end
+
+  def show
+    @sauna = Sauna.find(params[:id])
   end
 
 private

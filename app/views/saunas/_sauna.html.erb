@@ -1,11 +1,14 @@
-<div class='sauna-img-content'>
-  <%= image_tag sauna.image, class: "sauna-img" if sauna.image.attached? %>
-</div>
-<div class='sauna-info'>
- <h3 class='sanua-name'>
-  <%= sauna.name %>
- </h3>
- <div class='sauna-price'>
-  <span><%= sauna.price %>円<br></span>
-   </div>
+<div class='card'>
+  <%= link_to image_tag(sauna.image, class: :sauna__img), sauna_path(sauna.id), method: :get  %>
+  <div class='card_body'>
+    <h3 class='sanua__name'>
+       <%= sauna.name %>
+     </h3>
+     <div class='sauna__info'>
+       <span>予算<%= sauna.price %>円<br></span>
+       <span>温度<%= sauna.temperature %>℃<br></span>
+       <span>湿度<%= sauna.humidity %>%<br></span>
+       <span>水風呂<%= sauna.cool_bath_temperature %>℃<br></span>
+     </div>
+  </div>
 </div>
