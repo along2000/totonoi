@@ -1,13 +1,7 @@
-<%= @sauna.each do |sauna|%>
-<div class='card_body'>
-    <h3 class='sanua__name'>
-       <%= sauna.name %>
-     </h3>
-     <div class='sauna__info'>
-       <span>予算<%= sauna.price %>円<br></span>
-       <span>温度<%= sauna.temperature %>℃<br></span>
-       <span>湿度<%= sauna.humidity %>%<br></span>
-       <span>水風呂<%= sauna.cool_bath_temperature %>℃<br></span>
-     </div>
-  </div>
-<% end %>
+<main class="main">
+  <div class="inner">
+    <div class="card__wrapper">
+      <%= render  partial:'sauna', collection: @sauna %> 
+    </div>
+      </div>
+</main>

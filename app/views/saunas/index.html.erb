@@ -10,10 +10,33 @@
     <div class="card__wrapper">
       <%= render  partial:'sauna', collection: @saunas %> 
     </div>
+  <div class="category_wrapper">
+    <div class="category_select">
+    <%= image_tag 'sauna.png', size: '100x100', class: 'sauna_category_img' %>
+    <%= link_to 'ドライサウナ(乾式)', select_category_index_sauna_path(id:[2]) %>
 
-    <%= link_to '高温', select_category_index_sauna_path(id:[2]) %>
-    <%= link_to '低温', select_category_index_sauna_path(id:[3]) %>
-    <%= link_to '多湿', select_category_index_sauna_path(id:[4]) %>
+    <%= image_tag 'sauna2.png', size: '100x100', class: 'sauna_category_img' %>
+    <%= link_to 'フィンランドサウナ(ロウリュ)', select_category_index_sauna_path(id:[3]) %>
+
+        <%= image_tag 'sauna3.png', size: '100x100', class: 'sauna_category_img' %>
+    <%= link_to 'スチームサウナ', select_category_index_sauna_path(id:[4]) %>
+
+        <%= image_tag 'sauna4.png', size: '100x100', class: 'sauna_category_img' %>
+    <%= link_to 'ケロサウナ', select_category_index_sauna_path(id:[5]) %>
+
+        <%= image_tag 'sauna5.png', size: '100x100', class: 'sauna_category_img' %>
+    <%= link_to '薪サウナ', select_category_index_sauna_path(id:[6]) %>
+
+        <%= image_tag 'sauna6.png', size: '100x100', class: 'sauna_category_img' %>
+    <%= link_to '塩サウナ', select_category_index_sauna_path(id:[7]) %>
+
+        <%= image_tag 'sauna7.png', size: '100x100', class: 'sauna_category_img' %>
+    <%= link_to 'テントサウナ', select_category_index_sauna_path(id:[8]) %>
+
+        <%= image_tag 'sauna8.png', size: '100x100', class: 'sauna_category_img' %>
+    <%= link_to 'その他', select_category_index_sauna_path(id:[9]) %>
+    </div>
+    </div>
 
   </div>
 </main>

@@ -23,6 +23,9 @@ class SaunasController < ApplicationController
 
   def select_category_index
     @sauna = Sauna.where(category_id: params[:id])
+    if @sauna.blank?
+      redirect_to root_path
+    end
   end
 
 

@@ -162,6 +162,8 @@ a {
   text-decoration: underline;
 }
 
+.category_select
+
 /* 詳細ページ */
 .sauna__wrapper{
   min-height: calc(100vh - 161px);
