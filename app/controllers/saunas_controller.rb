@@ -21,6 +21,11 @@ class SaunasController < ApplicationController
     @sauna = Sauna.find(params[:id])
   end
 
+  def select_category_index
+    @sauna = Sauna.where(category_id: params[:id])
+  end
+
+
 private
     def sauna_params
       params.require(:sauna).permit(:image, :name, :text, :price, :temperature, :humidity, :cool_bath_temperature, :category_id, :postcode, :prefecture_id,

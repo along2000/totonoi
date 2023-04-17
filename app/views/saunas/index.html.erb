@@ -10,5 +10,10 @@
     <div class="card__wrapper">
       <%= render  partial:'sauna', collection: @saunas %> 
     </div>
+
+    <%= link_to '高温', select_category_index_sauna_path(id:[2]) %>
+    <%= link_to '低温', select_category_index_sauna_path(id:[3]) %>
+    <%= link_to '多湿', select_category_index_sauna_path(id:[4]) %>
+
   </div>
 </main>
