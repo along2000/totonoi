@@ -161,8 +161,46 @@ a {
   text-align: right;
   text-decoration: underline;
 }
+.category_select{
+  display:flex;
+  flex-wrap:wrap;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.sauna_select{
+  width:21%;
+  margin:2%;
+  height:180px;
+  line-height:180px;
+  text-align:center;
+  font-size: 10px;
+  position: relative;
+}
 
-.category_select
+.sauna_select p{
+  color: #fafafa;
+  background: skyblue;
+  top: 50%;
+  left: 50%;
+  margin:0;
+  padding:0;
+
+}
+
+.sauna_category img{
+
+}
+
+.sauna_link_name{
+color: #5cb4ea;
+font-size: 5px;
+position: absolute;
+top: 50%;
+left: 50%;
+margin:0;
+padding:0;
+}
 
 /* 詳細ページ */
 .sauna__wrapper{
