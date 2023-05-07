@@ -6,47 +6,52 @@
       <span>こんにちは、</span><%= link_to current_user.nickname + "さん", user_path(current_user),class: :greeting__link %>
       </div> 
     <% end %>
-
+    
+    <h2 class="title">
+      サウナ一覧
+    </h2>
     <div class="card__wrapper">
       <%= render  partial:'sauna', collection: @saunas %> 
     </div>
   <div class="category_wrapper">
+    <h2 class="title">
+    サウナのタイプから探す
+    </h2>
     <div class="category_select">
-
-<div class="sauna_select">
-     <%= image_tag 'sauna.png', class: 'sauna_category_img' %>
-  <%= link_to 'ドライサウナ(乾式)', select_category_index_sauna_path(id:[2]), class: 'sauna_link_name' %>
+      <div class="sauna_select">
+         <%= image_tag 'sauna.png', class: 'sauna_category_img' %>
+         <%= link_to 'ドライサウナ(乾式)', select_category_index_sauna_path(id:[2]), class: 'sauna_link_name' %>
       </div>
-<div class="sauna_select">
-    <%= image_tag 'sauna2.png', size: '100x100', class: 'sauna_category_img' %>
-    <%= link_to 'フィンランドサウナ(ロウリュ)', select_category_index_sauna_path(id:[3]) %>
+      <div class="sauna_select">
+    <%= image_tag 'sauna2.png', class: 'sauna_category_img' %>
+    <%= link_to 'フィンランドサウナ', select_category_index_sauna_path(id:[3]), class: 'sauna_link_name' %>
     </div>
 <div class="sauna_select">
-        <%= image_tag 'sauna3.png', size: '100x100', class: 'sauna_category_img' %>
-    <%= link_to 'スチームサウナ', select_category_index_sauna_path(id:[4]) %>
+        <%= image_tag 'sauna3.png', class: 'sauna_category_img' %>
+    <%= link_to 'スチームサウナ', select_category_index_sauna_path(id:[4]), class: 'sauna_link_name' %>
     </div>
 <div class="sauna_select">
-        <%= image_tag 'sauna4.png', size: '100x100', class: 'sauna_category_img' %>
-    <%= link_to 'ケロサウナ', select_category_index_sauna_path(id:[5]) %>
+        <%= image_tag 'sauna4.png', class: 'sauna_category_img' %>
+    <%= link_to 'ケロサウナ', select_category_index_sauna_path(id:[5]), class: 'sauna_link_name' %>
     </div>
 <div class="sauna_select">
-        <%= image_tag 'sauna5.png', size: '100x100', class: 'sauna_category_img' %>
-    <%= link_to '薪サウナ', select_category_index_sauna_path(id:[6]) %>
+        <%= image_tag 'sauna5.png', class: 'sauna_category_img' %>
+    <%= link_to '薪サウナ', select_category_index_sauna_path(id:[6]), class: 'sauna_link_name' %>
     </div>
 <div class="sauna_select">
-        <%= image_tag 'sauna6.png', size: '100x100', class: 'sauna_category_img' %>
-    <%= link_to '塩サウナ', select_category_index_sauna_path(id:[7]) %>
+        <%= image_tag 'sauna6.png', class: 'sauna_category_img' %>
+    <%= link_to '塩サウナ', select_category_index_sauna_path(id:[7]), class: 'sauna_link_name' %>
     </div>
 <div class="sauna_select">
-        <%= image_tag 'sauna7.png', size: '100x100', class: 'sauna_category_img' %>
-    <%= link_to 'テントサウナ', select_category_index_sauna_path(id:[8]) %>
+        <%= image_tag 'sauna7.png', class: 'sauna_category_img' %>
+    <%= link_to 'テントサウナ', select_category_index_sauna_path(id:[8]), class: 'sauna_link_name' %>
     </div>
 <div class="sauna_select">
-        <%= image_tag 'sauna8.png', size: '100x100', class: 'sauna_category_img' %>
-    <%= link_to 'その他', select_category_index_sauna_path(id:[9]) %>
+        <%= image_tag 'sauna8.png', class: 'sauna_category_img' %>
+    <%= link_to 'その他', select_category_index_sauna_path(id:[9]), class: 'sauna_link_name' %>
     </div>
-    </div>
-    </div>
+</div>
+</div>
 
   </div>
 </main>

@@ -28,6 +28,24 @@ class SaunasController < ApplicationController
     end
   end
 
+  def edit
+    @sauna = Sauna.find(params[:id])
+  end
+
+  def update
+    @sauna = Sauna.find(params[:id])
+    if @sauna.update(sauna_params)
+      redirect_to sauna_path(@sauna.id)
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @sauna = Sauna.find(params[:id])
+    @sauna.destroy
+    redirect_to root_path
+  end
 
 private
     def sauna_params

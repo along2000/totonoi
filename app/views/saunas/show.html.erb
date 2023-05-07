@@ -1,13 +1,54 @@
-<div class='card'>
-  <div class='card_body'>
-    <h3 class='sanua__name'>
-       <%= @sauna.name %>
-     </h3>
-     <div class='sauna__info'>
-       <span>予算<%= @sauna.price %>円<br></span>
-       <span>温度<%= @sauna.temperature %>℃<br></span>
-       <span>湿度<%= @sauna.humidity %>%<br></span>
-       <span>水風呂<%= @sauna.cool_bath_temperature %>℃<br></span>
-     </div>
+<div class="sauna-show">
+  <div class="sauna-box">
+    <h2 class="name">
+      <%= @sauna.name %>
+    </h2>
+    <div class="sauna-img-content">
+      <%= image_tag @sauna.image, class: "sauna-box-img" if @sauna.image.attached? %>
+    </div>
+    <div class="sauna-price-box">
+      <span class="sauna-price">
+        平均予算<%= @sauna.price %>円
+      </span>
+    </div>
+
+<% if user_signed_in? %>
+ <% if current_user.id == @sauna.user_id %>
+    <%= link_to "サウナの編集", edit_sauna_path(@sauna), method: :get, class: "sauna-red-btn" %>
+    <p class="or-text">or</p>
+    <%= link_to "サウナの削除", sauna_path(@sauna), method: :delete, class: "sauna-destroy" %>
+ <% end %>
+<% end %>
+
+    <div class="sauna-explain-box">
+      <span><%= @sauna.text %></span>
+    </div>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-sauna">室温</th>
+          <td class="detail-value"><%= @sauna.temperature %>℃</td>
+        </tr>
+        <tr>
+          <th class="detail-sauna">湿度</th>
+          <td class="detail-value"><%= @sauna.humidity %>%</td>
+        </tr>
+        <tr>
+          <th class="detail-sauna">水風呂</th>
+          <td class="detail-value"><%= @sauna.cool_bath_temperature %>℃</td>
+        </tr>
+        <tr>
+          <th class="detail-sauna">サウナタイプ</th>
+          <td class="detail-value"><%= @sauna.category.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-sauna">住所</th>
+          <td class="detail-value"><%= @sauna.prefecture.name %><%= @sauna.city %><%= @sauna.block %></td>
+        </tr>
+        <tr>
+          <th class="detail-sauna">電話番号</th>
+          <td class="detail-value"><%= @sauna.phone_number %></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-</div>
