@@ -1,14 +1,32 @@
 <div class='card'>
   <%= link_to image_tag(sauna.image, size: '450x300', class: :sauna__img), sauna_path(sauna.id), method: :get  %>
   <div class='card_body'>
-    <h3 class='sanua__name'>
+    <h3 class='sauna__name'>
        <%= sauna.name %>
      </h3>
-     <div class='sauna__info'>
-       <span>予算<%= sauna.price %>円<br></span>
-       <span>温度<%= sauna.temperature %>℃<br></span>
-       <span>湿度<%= sauna.humidity %>%<br></span>
-       <span>水風呂<%= sauna.cool_bath_temperature %>℃<br></span>
-     </div>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-sauna">室温</th>
+          <td class="detail-value"><%= sauna.temperature %>℃</td>
+        </tr>
+        <tr>
+          <th class="detail-sauna">湿度</th>
+          <td class="detail-value"><%= sauna.humidity %>%</td>
+        </tr>
+        <tr>
+          <th class="detail-sauna">水風呂</th>
+          <td class="detail-value"><%= sauna.cool_bath_temperature %>℃</td>
+        </tr>
+        <tr>
+          <th class="detail-sauna">サウナタイプ</th>
+          <td class="detail-value"><%= sauna.category.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-sauna">住所</th>
+          <td class="detail-value"><%= sauna.prefecture.name %><%= sauna.city %><%= sauna.block %></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>

@@ -470,3 +470,8 @@ line-height: 50px;
   border: 1px solid #dedede;
   font-size: 14px;
 }
+
+.sauna__name{
+  font-size: 15px;
+  text-align: center;
+}
