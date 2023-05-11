@@ -263,12 +263,6 @@ line-height: 50px;
   background: #999;
 }
 
-.prototype__comments{
-  background-color: #f6f6f6;
-  padding: 20px;
-  margin: 28px 0 40px 0;
-}
-
 .comments_lists{
   padding-left: 20px;
 }
@@ -370,6 +364,18 @@ line-height: 50px;
   .table{
     width: 100%;
   }
+
+  .sauna_link_name{
+    color: whitesmoke;
+    font-size: 10px;
+    position: absolute;
+    width: 100%;
+    left: 0; 
+    top: calc(50% - 25px); 
+    text-align: center; 
+    font-weight: bold; 
+    line-height: 50px;
+    }
 }
 
 .sauna-show {
