@@ -366,15 +366,7 @@ line-height: 50px;
   }
 
   .sauna_link_name{
-    color: whitesmoke;
     font-size: 10px;
-    position: absolute;
-    width: 100%;
-    left: 0; 
-    top: calc(50% - 25px); 
-    text-align: center; 
-    font-weight: bold; 
-    line-height: 50px;
     }
 }
 
