@@ -335,9 +335,12 @@ line-height: 50px;
     width: 48%;
     margin-bottom: 40px;
   }
-  .prototype_image{
+  .sauna_image{
     width: 60%;
   }
+  .sauna_link_name{
+    font-size: 10px;
+    }
 }
 
  /* スマホ表示 */
@@ -352,13 +355,13 @@ line-height: 50px;
     width: 100%;
     margin-bottom: 60px;
   }
-  .card__title {
+  .sauna__title {
     font-size: 18px;
   }
   .card__summary {
     font-size: 14px;
   }
-  .prototype_image{
+  .sauna_image{
     width: 100%;
   }
   .table{
@@ -366,7 +369,7 @@ line-height: 50px;
   }
 
   .sauna_link_name{
-    font-size: 10px;
+    font-size: 8px;
     }
 }
 
