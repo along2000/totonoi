@@ -44,14 +44,14 @@ https://totonoi.onrender.com
 * 現在地から近いサウナを検索する機能
 * その日の気分でサウナを検索する機能
 * ユーザーのお気に入りのタイプを登録でき、オススメのサウナを表示する機能
-## データベース設計	ER図を添付。
+## データベース設計 
 [![Image from Gyazo](https://i.gyazo.com/e7563fb2d5c7d6232e186545e685bf0e.png)](https://gyazo.com/e7563fb2d5c7d6232e186545e685bf0e)
 ## 画面遷移図	
-## 開発環境	使用した言語・サービスを記載。
-* 言語:Ruby,JavaScript
-* フレームワーク:RubyOnRails
-## ローカルでの動作方法※	git cloneしてから、ローカルで動作をさせるまでに必要なコマンドを記載。
-## 工夫したポイント※	制作背景・使用技術・開発方法・タスク管理など、企業へＰＲしたい事柄を記載。
+[![Image from Gyazo](https://i.gyazo.com/908533bb8815773cb2bfafd393e7d0a6.png)](https://gyazo.com/908533bb8815773cb2bfafd393e7d0a6)
+## 開発環境	
+### 開発言語
+* Ruby
+* JavaScript
 
 ## usersテーブル
 | Column              | Type       | Options                       |
