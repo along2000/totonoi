@@ -369,7 +369,11 @@ line-height: 50px;
   .table{
     width: 100%;
   }
-
+  .sauna__img {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+  }
   .sauna_link_name{
     font-size: 8px;
     }
