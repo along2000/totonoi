@@ -340,6 +340,11 @@ line-height: 50px;
   .sauna_image{
     width: 60%;
   }
+  .sauna__img {
+    margin-bottom: 16px;
+    width: 100%;
+    height: 200px;
+  }
   .sauna_link_name{
     font-size: 10px;
     }
@@ -372,7 +377,7 @@ line-height: 50px;
   .sauna__img {
     margin-bottom: 10px;
     width: 100%;
-    height: 30px;
+    height: 100px;
   }
   .sauna_link_name{
     font-size: 8px;
