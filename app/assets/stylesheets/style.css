@@ -149,6 +149,8 @@ a {
 }
 .sauna__img {
   margin-bottom: 16px;
+  width: 100%;
+  height: 300px;
 }
 .sauna__name {
   display: block;

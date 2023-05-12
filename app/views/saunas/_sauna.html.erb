@@ -1,5 +1,5 @@
 <div class='card'>
-  <%= link_to image_tag(sauna.image, size: '450x300', class: :sauna__img), sauna_path(sauna.id), method: :get  %>
+  <%= link_to image_tag(sauna.image, class: :sauna__img), sauna_path(sauna.id), method: :get  %>
   <div class='card_body'>
     <h3 class='sauna__name'>
        <%= sauna.name %>
