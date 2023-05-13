@@ -348,6 +348,29 @@ line-height: 50px;
   .sauna_link_name{
     font-size: 10px;
     }
+  .detail-table {
+    margin-bottom: 10px;
+    width: 100%;
+    }
+  .detail-sauna {
+    width: 10%;
+    background-color: #eee;
+    border: 1px solid #dedede;
+    font-size: 5px;
+    text-align: center;
+    height: 50px;
+    }
+  .detail-value {
+     width: 30%;
+     padding: 5px;
+     border: 1px solid #dedede;
+     font-size: 5px;
+     height: 50px;
+    }
+  .sauna__name{
+     font-size: 8px;
+     text-align: center;
+    }
 }
 
  /* スマホ表示 */
@@ -386,23 +409,22 @@ line-height: 50px;
   .detail-table {
     margin-bottom: 10px;
     width: 100%;
-    height: 150px;
     }
   .detail-sauna {
     width: 10%;
     background-color: #eee;
     border: 1px solid #dedede;
-    font-size: 8px;
+    font-size: 5px;
     text-align: center;
+    height: 50px;
     }
-    
   .detail-value {
      width: 30%;
      padding: 5px;
      border: 1px solid #dedede;
-     font-size: 8px;
+     font-size: 5px;
+     height: 50px;
     }
-    
   .sauna__name{
      font-size: 8px;
      text-align: center;
