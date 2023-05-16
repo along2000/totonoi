@@ -9,7 +9,7 @@ https://totonoi.onrender.com
 * ID:**admin**  
 * PASS:**2222**  
 ### テスト用アカウント
-* ID:**sauna1**  
+* ID:**test@com**  
 * PASS:**a12345**  
 ## 利用方法	
 * *新規登録*をクリックすると、アカウントを登録することができます。  
