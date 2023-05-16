@@ -6,6 +6,6 @@ Rails.application.routes.draw do
       get 'select_category_index'
     end
   end
-  
-  resources :users, only: [:edit, :update, :destroy]
+
+  resources :users, only: [:new, :edit, :update, :destroy]
 end
