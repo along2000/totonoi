@@ -539,3 +539,21 @@ line-height: 50px;
   font-size: 15px;
   text-align: center;
 }
+
+.pagetop {
+  height: 40px;
+  width: 80px;
+  right: 30px;
+  bottom: 30px;
+  background: white;
+  border: solid 2px #b0defa;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
