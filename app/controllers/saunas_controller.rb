@@ -1,7 +1,7 @@
 class SaunasController < ApplicationController
 
   def index
-    @saunas = Sauna.all
+    @saunas = Sauna.limit(6).order(" created_at DESC ")
   end
 
   def new
